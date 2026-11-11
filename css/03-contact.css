@@ -23,6 +23,12 @@ body {
 /* Let main expand to fill available space */
 main.contact-main, main {
     flex: 1;
+
+    background-image: url('../img/coffeeplaceholder2.jpg'); 
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 20px;
 }
 
 /* Old top header fallback styles if not using util-header.css */
