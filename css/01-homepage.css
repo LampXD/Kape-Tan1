@@ -1,10 +1,9 @@
-
-
 /* =======================Main=========================== */
 main.homepage-main  {
     flex: 1;
-
- background-image: url('../img/coffeeplaceholder2.jpg');
+    /* Optional: Add a background image or pattern to your main section 
+       so the glass blur effect has something visually interesting to blur! */
+    background-image: url('../img/coffeeplaceholder2.jpg'); /* Example background image */
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,47 +19,4 @@ body.homepage-body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F7F1E8;
     color: #613512;
-}
-
-
-.glass-box {
- 
-    background: rgba(255, 255, 255, 0.65);
-    
-
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); 
-    
-
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    
-
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 800px;
-    
-
-    box-shadow: 0 8px 32px 0 rgba(97, 53, 18, 0.1);
-}
-
-
-.glass-box h2 {
-    color: #43230c;
-    font-size: 2rem; 
-    margin-top: 0;
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
-}
-
-.glass-box p {
-    font-size: 1.3rem; 
-    line-height: 1.7;    
-    margin-bottom: 16px;
-}
-
-.glass-box em {
-    font-style: italic;
-    font-weight: 600;
-    color: #43230c;
 }
