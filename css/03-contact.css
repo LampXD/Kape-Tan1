@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F1E8;
+    color: #613512;
+    
+    /* 1. Made the color overlay much lighter so the background image pops through */
+    background-image: url('../img/coffeeplaceholder2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Let main expand to fill available space */
+main.contact-main, main {
+    flex: 1;
+}
+
+/* Old top header fallback styles if not using util-header.css */
+.top {
+    padding: 22px 5%;
+    background-color: #492608;
+    color: #F7F1E8;
+    display: flex;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top nav {
+    margin-left: auto;
+}
+
+.top nav h3 {
+    display: flex;
+    gap: 28px;
+}
+
+.top nav a {
+    color: #f7f1e8;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.top nav a:hover {
+    color: #d9a477;
+}
+
+/* Contact Container Layout */
+.contact {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+/* Page Intro Header Styling */
+/* ==================== Glassy Cafe Sign Intro ==================== */
+.header-intro {
+    max-width: 520px;
+    margin: 0 auto 42px auto;
+    padding: 24px 32px;
+    text-align: center;
+    
+    /* Glass sign container */
+    background: rgba(35, 20, 10, 0.55); /* Warm espresso tint for strong contrast */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(200, 138, 74, 0.4); /* Subtle warm caramel border */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cafename {
+    margin-bottom: 6px;
+    color: #C88A4A; /* Bright Caramel Tan */
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header-intro h1 {
+    margin-bottom: 8px;
+    color: #FDF8F2; /* Cream White text for sharp readability */
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.15;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-intro p:last-child {
+    color: #E6D2B8; /* Warm light tan */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==================== Glassy Info Cards ==================== */
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 54px;
+}
+
+.info > div {
+    /* 2. Reduced white opacity to 0.4 so the coffee image shows behind the glass */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(97, 53, 18, 0.15);
+    
+    padding: 35px 24px;
+    text-align: center;
+}
+
+.info h2 {
+    margin-bottom: 16px;
+    color: #43230c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+}
+
+.info p {
+    margin: 10px 0;
+    color: #613512;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.info h3, .info h4 {
+    color: #92673a;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.info a {
+    color: #613512;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.info a:hover {
+    color: #C88A4A;
+    text-decoration: underline;
+}
+
+/* ==================== Glassy Google Maps Section ==================== */
+.gmaps {
+    text-align: center;
+    /* 3. Same lighter glass effect here */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(97, 53, 18, 0.15);
+    
+    padding: 40px 30px;
+    margin-bottom: 40px;
+}
+
+.gmaps h2 {
+    margin-bottom: 20px;
+    color: #43230c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+}
+
+.gmaps iframe {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(97, 53, 18, 0.15);
+}
+
+footer {
+    padding: 22px;
+    background-color: #492608;
+    color: #F7F1E8;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact {
+        padding: 40px 20px;
+    }
+}

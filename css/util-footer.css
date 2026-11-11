@@ -1,0 +1,18 @@
+
+/* ===========================Global Footer================================= */
+footer {
+    background-color: #000000;
+    border-top: 2px solid #C88A4A;
+    color: #FDF8F2;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes footer down automatically */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}

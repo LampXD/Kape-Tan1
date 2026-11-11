@@ -1,0 +1,86 @@
+/* ===========================Global Header================================= */
+/* note: Ung header natin nasa About.css pa kapag nagustuhan nyo ung design ilipat nyo dito tapos pag may gusto kayo i modify gawin nyona */
+/* ===========================Header================================= */
+header.header {
+    background-color: #4D2A00;
+
+    /* This layers a low-opacity coffee image on top of the black background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/coffeebeans.png');
+    background-size: cover;          /* Covers the header nicely */
+    background-position: right center; /* Pushes the coffee image towards the right side */
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 120px;          /* Header stays thin */
+    margin: 0;
+    padding: 0 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    overflow: visible;     /* Allows the logo to extend past the header box */
+    position: relative;
+    z-index: 10;
+}
+
+/* Make the logo big and wide */
+header.header img {
+    width: 200px;          /* Desired large width */
+    height: 170px;          /* Keeps perfect proportions */
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+
+    filter: drop-shadow(0px 0px 8px rgba(253, 248, 242, 0.90));
+
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+header.header img:hover {
+    transform: scale(1.12); /* Slightly enlarges the logo on hover */   
+    filter: drop-shadow(0px 0px 16px rgba(253, 248, 242, 1)) brightness(1.15); /* Enhances the shadow on hover */
+}
+/* ==================header NAV================ */
+header.header .header-nav {
+    display: flex;
+    padding-right: 20px; 
+    gap: 15px; /* Comfortable spacing between the glassy buttons */
+    align-items: center;
+}
+
+header.header .header-nav a {
+    /* 1. Glassy background and blur */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+    /* 2. Shape and borders */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px; /* Pill-shaped buttons */
+    
+    /* 3. Sizing and text styling */
+    padding: 10px 22px;
+    color: #FDF8F2; /* Warm Cream color */
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    
+    /* 4. Smooth animations */
+    transition: all 0.3s ease;
+}
+
+/* Hover & Active State - Caramel Tan Glass Pill (unified look!) */
+header.header .header-nav a:hover,
+header.header .header-nav a.active {
+    background: rgba(200, 138, 74, 0.45); /* Semi-transparent Caramel Tan */
+    border-color: rgba(200, 138, 74, 0.8);
+    color: #FDF8F2;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(200, 138, 74, 0.3);
+}
+/* ==============Header NAV================ */
+/* ===========================Header================================= */

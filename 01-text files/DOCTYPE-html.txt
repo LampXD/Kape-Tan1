@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, intiial-scale=1">
+        <title>Kape-Tan</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/kapetanlogo.jpg" width="50%" alt="This is the Kape Tan logo">
+            <h1>Your little coffee corner!</h1>
+            <h2>[placeholder slogan]</h2>
+        </header>
+        <main>
+            <nav>
+                <h3>
+                    <a href="index.html">Homepage</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                </h3>
+            </nav>
+            <h1>Best Sellers</h1>
+            <ul>
+                <li>
+                    <h3>Matcha Latte</h3>
+                    <br>
+                    <img src="img/matchalatte.jpg" width="%20" height="20%">
+                </li>
+                <li>
+                    <h3>Dirty Matcha Latte</h3>
+                    <br>
+                    <img src="img/dirtymatchalatte.jpg" width="20%" height="20%">
+                </li>
+            </ul>
+            <h1>New Products</h1>
+            <ul>
+                <li>
+                    <h3>Milo Dinosaur</h3>
+                    <br>
+                    <img src="img/milodino.jpg" width="20%" height="20%">
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <p>All Rights Reserved &#169;</p>
+        </footer>
+    </body>
+</html>
