@@ -23,8 +23,9 @@ body {
 /* Let main expand to fill available space */
 main.contact-main, main {
     flex: 1;
+}
 
-
+main.contact-main {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 20px;
