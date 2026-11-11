@@ -10,7 +10,6 @@ body {
     color: #613512;
     
     /* 1. Made the color overlay much lighter so the background image pops through */
-    background-image: url('../img/coffeeplaceholder2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
