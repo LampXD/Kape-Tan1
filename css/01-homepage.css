@@ -22,16 +22,16 @@ body.about-body {
     color: #613512;
 }
 
-/* ==================== Glass Box Styling ==================== */
+
 .glass-box {
-    /* 1. Semi-transparent background (white with 65% opacity) */
+ 
     background: rgba(255, 255, 255, 0.65);
     
-    /* 2. Frosted glass blur effect */
+
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    -webkit-backdrop-filter: blur(12px); 
     
-    /* 3. Soft border and rounded corners for depth */
+
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     
