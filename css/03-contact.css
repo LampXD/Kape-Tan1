@@ -24,7 +24,6 @@ body {
 main.contact-main, main {
     flex: 1;
 
-    background-image: url('../img/coffeeplaceholder2.jpg'); 
 
     background-repeat: no-repeat;
     background-size: cover;
