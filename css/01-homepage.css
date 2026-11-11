@@ -4,7 +4,7 @@
 main.homepage-main  {
     flex: 1;
 
-    background-image: jpg
+ background-image: url('https://i.pinimg.com/1200x/da/fc/cc/dafccc79321b5cfc6d80bf300926d2b4.jpg');
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,27 +35,27 @@ body.about-body {
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     
-    /* 4. Spacing and layout */
+
     padding: 30px;
     margin: 20px auto;
     max-width: 800px;
     
-    /* 5. Soft shadow to lift the container off the page */
+
     box-shadow: 0 8px 32px 0 rgba(97, 53, 18, 0.1);
 }
 
-/* Ensure readability for headings and paragraphs inside the glass box */
+
 .glass-box h2 {
     color: #43230c;
-    font-size: 2rem; /* ~32px, makes titles stand out clearly */
+    font-size: 2rem; 
     margin-top: 0;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
 }
 
 .glass-box p {
-    font-size: 1.3rem; /* ~18px, much easier on the eyes */
-    line-height: 1.7;    /* Adds comfortable breathing room between lines */
+    font-size: 1.3rem; 
+    line-height: 1.7;    
     margin-bottom: 16px;
 }
 
